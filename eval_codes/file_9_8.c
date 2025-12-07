@@ -1,0 +1,1 @@
+typedef struct { char name[16]; int id; } Rec; void copy_struct(Rec *dst, const Rec *src, unsigned nrec) { for (unsigned i = 0; i < nrec; ++i) dst[i] = src[i]; }

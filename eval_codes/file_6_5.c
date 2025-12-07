@@ -1,0 +1,1 @@
+char *get_line(FILE *fp) { static char buf[64]; fgets(buf, sizeof(buf), fp); buf[strcspn(buf, "\r\n")] = 0; return buf; }

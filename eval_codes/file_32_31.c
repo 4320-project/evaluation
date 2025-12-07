@@ -1,0 +1,1 @@
+int safe_string_copy(char *dest, const char *src, size_t dest_size) { if (dest == NULL || src == NULL || dest_size == 0) { return -1; } size_t src_len = strlen(src); if (src_len >= dest_size) { return -1; } strncpy(dest, src, dest_size - 1); dest[dest_size - 1] = '\0'; return 0; }

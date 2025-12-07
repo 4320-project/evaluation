@@ -1,0 +1,1 @@
+int safe_memcpy(void *dest, const void *src, size_t n, size_t dest_size) { if (dest == NULL || src == NULL || n == 0 || n > dest_size) { return -1; } memcpy(dest, src, n); return 0; }

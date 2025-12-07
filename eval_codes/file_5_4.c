@@ -1,0 +1,1 @@
+int parse_msg(const uint8_t *pkt, unsigned pkt_len, uint8_t *out) { if (pkt_len < 2) return -1; unsigned data_len = pkt[0] | (pkt[1] << 8); memcpy(out, pkt + 2, data_len); return 0; }

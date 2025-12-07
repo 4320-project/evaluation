@@ -1,0 +1,1 @@
+multi_get_bool(bool &value) { if (!Multi_sexp_bytes_left || !current_argument_count) { return false; } GET_DATA(value); multi_reduce_counts(sizeof(value)); return true; }

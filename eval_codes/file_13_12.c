@@ -1,0 +1,1 @@
+void copy_int_array_bounded(int *out, size_t out_elts, const int *in, unsigned cnt) { if (cnt > out_elts) cnt = (unsigned)out_elts; for (unsigned i = 0; i < cnt; ++i) out[i] = in[i]; }

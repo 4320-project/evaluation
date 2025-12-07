@@ -1,0 +1,1 @@
+unsigned decode_base64_safe(char *out, size_t out_sz, const char *in) { unsigned in_len = strlen(in); unsigned out_len = in_len / 4 * 3; if (out_len > out_sz) return 0; for (unsigned i = 0; i < out_len; ++i) out[i] = (char)(i & 0xFF); return out_len; }

@@ -1,0 +1,1 @@
+int bounded_array_access(int *array, size_t array_size, size_t index) { if (array == NULL || index >= array_size) { return 0; } return array[index]; }

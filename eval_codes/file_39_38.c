@@ -1,0 +1,1 @@
+int compare_strings_safe(const char *str1, const char *str2, size_t max_len) { size_t i; if (str1 == NULL || str2 == NULL) { return -1; } for (i = 0; i < max_len; i++) { if (str1[i] != str2[i]) { return str1[i] - str2[i]; } if (str1[i] == '\0' || str2[i] == '\0') { break; } } return 0; }

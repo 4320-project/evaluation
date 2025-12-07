@@ -1,0 +1,1 @@
+int safe_sprintf(char *buffer, size_t buffer_size, const char *format, ...) { if (buffer == NULL || buffer_size == 0) { return -1; } va_list args; va_start(args, format); int result = vsnprintf(buffer, buffer_size, format, args); va_end(args); if (result >= buffer_size) { buffer[buffer_size - 1] = '\0'; return -1; } return result; }

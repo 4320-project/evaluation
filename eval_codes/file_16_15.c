@@ -1,0 +1,1 @@
+char *get_line_safe(FILE *fp, char *buf, size_t buf_sz) { if (!fgets(buf, (int)buf_sz, fp)) return NULL; buf[strcspn(buf, "\r\n")] = 0; return buf; }

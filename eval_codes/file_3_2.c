@@ -1,0 +1,1 @@
+void copy_int_array(int *out, const int *in, unsigned cnt) { for (unsigned i = 0; i < cnt; ++i) out[i] = in[i]; }

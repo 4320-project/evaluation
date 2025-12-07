@@ -1,0 +1,1 @@
+SelectViewsOf (GraphicComp* comp, Editor* ed) { Selection* s = ed->GetSelection(); s->Clear(); Viewer* viewer; for (int i = 0; (viewer = ed->GetViewer(i)) != nil; ++i) { GraphicView* views = viewer->GetGraphicView(); GraphicView* view = views->GetGraphicView(comp); if (view != nil) s->Append(view); } }
