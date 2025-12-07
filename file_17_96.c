@@ -1,0 +1,1 @@
+void goodG2B(){twoIntsStruct*data;twoIntsStruct tmpData;{tmpData.intOne=0;tmpData.intTwo=0;data=&tmpData;}CWE476_NULL_Pointer_Dereference__struct_63b_goodG2BSink(&data);}

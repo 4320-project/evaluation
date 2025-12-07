@@ -1,0 +1,1 @@
+void CWE476_NULL_Pointer_Dereference__char_52c_badSink(char*data){printHexCharLine(data[0]);}void CWE476_NULL_Pointer_Dereference__char_52c_goodG2BSink(char*data){printHexCharLine(data[0]);}void CWE476_NULL_Pointer_Dereference__char_52c_goodB2GSink(char*data){if(data !=NULL){printHexCharLine(data[0]);}else{printLine("data is NULL");}}

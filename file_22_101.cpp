@@ -1,0 +1,1 @@
+namespace CWE476_NULL_Pointer_Dereference__char_81{void CWE476_NULL_Pointer_Dereference__char_81_goodB2G::action(char*data)const{if(data !=NULL){printHexCharLine(data[0]);}else{printLine("data is NULL");}}}

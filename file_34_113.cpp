@@ -1,0 +1,1 @@
+void goodG2B(){long*data;long tmpData=5L;vector<long*> dataVector;{data=&tmpData;}dataVector.insert(dataVector.end(),1,data);dataVector.insert(dataVector.end(),1,data);dataVector.insert(dataVector.end(),1,data);goodG2BSink(dataVector);}

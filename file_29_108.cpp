@@ -1,0 +1,1 @@
+void goodG2B(){int64_t*data;int64_t tmpData=5LL;list<int64_t*> dataList;{data=&tmpData;}dataList.push_back(data);dataList.push_back(data);dataList.push_back(data);goodG2BSink(dataList);}

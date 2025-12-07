@@ -1,0 +1,1 @@
+void goodG2B(){int*data;int tmpData=5;{data=&tmpData;}CWE476_NULL_Pointer_Dereference__int_22_goodG2BGlobal=1;CWE476_NULL_Pointer_Dereference__int_22_goodG2BSink(data);}

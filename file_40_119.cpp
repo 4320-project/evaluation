@@ -1,0 +1,1 @@
+namespace CWE476_NULL_Pointer_Dereference__wchar_t_81{void CWE476_NULL_Pointer_Dereference__wchar_t_81_goodB2G::action(wchar_t*data)const{if(data !=NULL){printWcharLine(data[0]);}else{printLine("data is NULL");}}}

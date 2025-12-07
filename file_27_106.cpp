@@ -1,0 +1,1 @@
+void goodG2B(){TwoIntsClass*data;map<int,TwoIntsClass*> dataMap;{TwoIntsClass*tmpData=new TwoIntsClass;tmpData->intOne=0;tmpData->intTwo=0;data=tmpData;}dataMap[0]=data;dataMap[1]=data;dataMap[2]=data;goodG2BSink(dataMap);}

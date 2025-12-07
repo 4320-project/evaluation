@@ -1,0 +1,1 @@
+namespace CWE476_NULL_Pointer_Dereference__class_81{void CWE476_NULL_Pointer_Dereference__class_81_goodB2G::action(TwoIntsClass*data)const{if(data !=NULL){printIntLine(data->intOne);delete data;}else{printLine("data is NULL");}}}

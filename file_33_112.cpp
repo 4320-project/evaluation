@@ -1,0 +1,1 @@
+using namespace std;namespace CWE476_NULL_Pointer_Dereference__int_74{void badSink(map<int,int*> dataMap){int*data=dataMap[2];printIntLine(*data);}void goodG2BSink(map<int,int*> dataMap){int*data=dataMap[2];printIntLine(*data);}void goodB2GSink(map<int,int*> dataMap){int*data=dataMap[2];if(data !=NULL){printIntLine(*data);}else{printLine("data is NULL");}}}

@@ -1,0 +1,1 @@
+void goodG2B(){int*data;int tmpData=5;map<int,int*> dataMap;{data=&tmpData;}dataMap[0]=data;dataMap[1]=data;dataMap[2]=data;goodG2BSink(dataMap);}

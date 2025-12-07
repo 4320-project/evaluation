@@ -1,0 +1,1 @@
+void goodG2B(){TwoIntsClass*data;{TwoIntsClass*tmpData=new TwoIntsClass;tmpData->intOne=0;tmpData->intTwo=0;data=tmpData;}goodG2BSink_b(data);}

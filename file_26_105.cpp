@@ -1,0 +1,1 @@
+namespace CWE476_NULL_Pointer_Dereference__class_54{void badSink_e(TwoIntsClass*data);void badSink_d(TwoIntsClass*data){badSink_e(data);}void goodG2BSink_e(TwoIntsClass*data);void goodG2BSink_d(TwoIntsClass*data){goodG2BSink_e(data);}void goodB2GSink_e(TwoIntsClass*data);void goodB2GSink_d(TwoIntsClass*data){goodB2GSink_e(data);}}

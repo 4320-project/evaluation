@@ -1,0 +1,1 @@
+using namespace std;namespace CWE476_NULL_Pointer_Dereference__long_73{void badSink(list<long*> dataList){long*data=dataList.back();printLongLine(*data);}void goodG2BSink(list<long*> dataList){long*data=dataList.back();printLongLine(*data);}void goodB2GSink(list<long*> dataList){long*data=dataList.back();if(data !=NULL){printLongLine(*data);}else{printLine("data is NULL");}}}
