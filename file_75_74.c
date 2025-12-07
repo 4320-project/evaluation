@@ -1,0 +1,1 @@
+char* safe_strcat(char *dest, const char *src, size_t dest_size) { if (dest == NULL || src == NULL || dest_size == 0) { return dest; } size_t dest_len = strnlen(dest, dest_size); size_t src_len = strlen(src); if (dest_len + src_len + 1 > dest_size) { return dest; } strcpy(dest + dest_len, src); return dest; }

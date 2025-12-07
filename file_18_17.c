@@ -1,0 +1,1 @@
+void unpack_rle_safe(uint8_t *dst, size_t dst_cap, const uint8_t *src, unsigned src_len) { unsigned dst_idx = 0; for (unsigned i = 0; i + 1 < src_len; ) { uint8_t val = src[i++], run = src[i++]; if (dst_idx + run > dst_cap) return; while (run--) dst[dst_idx++] = val; } }

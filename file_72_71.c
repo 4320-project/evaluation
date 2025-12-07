@@ -1,0 +1,1 @@
+void safe_strcpy(char *dest, const char *src, size_t dest_size) { if (dest == NULL || src == NULL || dest_size == 0) { return; } size_t i; for (i = 0; i < dest_size - 1 && src[i] != '\0'; i++) { dest[i] = src[i]; } dest[i] = '\0'; }

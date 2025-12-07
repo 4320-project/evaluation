@@ -1,0 +1,1 @@
+typedef struct { uint8_t *vram; unsigned vram_size; } Card; void bitblt_pattern(Card *c, unsigned dst, const uint8_t *pat, unsigned w, unsigned h) { uint8_t *d = c->vram + dst; for (unsigned y = 0; y < h; ++y) memcpy(d + y * w, pat, w); }

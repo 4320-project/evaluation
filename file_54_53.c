@@ -1,0 +1,1 @@
+timeoutProtoDisplays(void) { struct protoDisplay *pdpy, *next; for (pdpy = protoDisplays; pdpy; pdpy = next) { next = pdpy->next; if (pdpy->date < (unsigned long)(now - PROTO_TIMEOUT)) disposeProtoDisplay(pdpy); } }

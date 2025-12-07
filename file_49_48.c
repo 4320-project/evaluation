@@ -1,0 +1,1 @@
+fs_read_fd(struct string *buffer, FILE *fd) { bool retval = false; char chunk[4096]; ssize_t read_size; while ((read_size = fread(&chunk, 1, sizeof(chunk), fd)) > 0) { if (!string_concatb(buffer, chunk, read_size)) goto bail_out; } retval = true; bail_out: return retval; }

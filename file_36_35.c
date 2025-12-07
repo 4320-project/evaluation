@@ -1,0 +1,1 @@
+void *allocate_memory_checked(size_t size) { void *ptr; if (size == 0 || size > MAX_ALLOC_SIZE) { return NULL; } ptr = malloc(size); if (ptr == NULL) { return NULL; } memset(ptr, 0, size); return ptr; }
