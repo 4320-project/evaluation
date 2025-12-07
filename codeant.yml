@@ -1,0 +1,17 @@
+version: 1
+
+include:
+  - "**/*.c"
+  - "**/*.h"
+
+exclude:
+  - "tests/**"
+  - "build/**"
+  - "out/**"
+  - "**/node_modules/**"
+  - "**/.git/**"
+
+settings:
+  language: "c"
+  severity: "all"
+  scan_subdirectories: true
