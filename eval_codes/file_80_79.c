@@ -1,1 +1,0 @@
-void safe_memset(void *s, int c, size_t n, size_t total_size) { if (s == NULL || n == 0 || n > total_size) { return; } memset(s, c, n); }

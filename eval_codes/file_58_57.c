@@ -1,1 +1,0 @@
-saveRecentTemplates() { QSettings settings(ORGNAME, APPNAME); QStringList recentTemplates; for (int i = 0; i < ui.templateCombo->count(); ++i) recentTemplates << ui.templateCombo->itemText(i); settings.setValue("TemplateRecent", recentTemplates); settings.setValue("TemplateFile", ui.templateCombo->lineEdit()->text()); }

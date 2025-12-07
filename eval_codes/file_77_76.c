@@ -1,1 +1,0 @@
-void safe_fgets(char *str, int num, FILE *stream) { if (str == NULL || num <= 1 || stream == NULL) { return; } if (fgets(str, num, stream) == NULL) { str[0] = '\0'; } if (strlen(str) == num - 1 && str[num - 2] != ' ') { int ch; while ((ch = fgetc(stream)) != ' ' && ch != EOF); } }

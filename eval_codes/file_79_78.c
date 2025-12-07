@@ -1,1 +1,0 @@
-size_t safe_read(int fd, void *buf, size_t count, size_t buf_size) { if (buf == NULL || count == 0 || count > buf_size) { return 0; } ssize_t bytes_read = read(fd, buf, count); if (bytes_read < 0) { return 0; } return bytes_read; }

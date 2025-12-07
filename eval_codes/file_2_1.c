@@ -1,1 +1,0 @@
-void naive_concat(char *dst, const char *a, const char *b) { strcpy(dst, a); strcat(dst, b); }

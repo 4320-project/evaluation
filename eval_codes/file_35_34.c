@@ -1,1 +1,0 @@
-int validate_file_path(const char *path) { if (path == NULL) { return -1; } if (strstr(path, "..") != NULL) { return -1; } if (path[0] == '/') { return -1; } if (strchr(path, '\0') != NULL) { return -1; } return 0; }

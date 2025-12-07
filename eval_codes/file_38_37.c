@@ -1,1 +1,0 @@
-int sanitize_input_string(char *input, size_t max_len) { size_t i; if (input == NULL || max_len == 0) { return -1; } for (i = 0; i < max_len && input[i] != '\0'; i++) { if (iscntrl((unsigned char)input[i])) { input[i] = ' '; } if (i >= max_len - 1) { input[i] = '\0'; break; } } if (i < max_len) { input[i] = '\0'; } return 0; }

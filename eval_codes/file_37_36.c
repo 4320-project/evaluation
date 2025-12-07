@@ -1,1 +1,0 @@
-int read_file_safe(FILE *file, void *buffer, size_t buffer_size, size_t *bytes_read) { size_t read_count; if (file == NULL || buffer == NULL || bytes_read == NULL) { return -1; } clearerr(file); read_count = fread(buffer, 1, buffer_size, file); if (ferror(file)) { return -1; } *bytes_read = read_count; return 0; }

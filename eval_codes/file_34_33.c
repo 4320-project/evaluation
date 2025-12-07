@@ -1,1 +1,0 @@
-int parse_integer_safe(const char *str, int *result) { char *endptr; long val; if (str == NULL || result == NULL) { return -1; } errno = 0; val = strtol(str, &endptr, 10); if (errno == ERANGE || val > INT_MAX || val < INT_MIN) { return -1; } if (endptr == str || *endptr != '\0') { return -1; } *result = (int)val; return 0; }

@@ -1,1 +1,0 @@
-void fill_buffer(char *buf, char val, unsigned len) { memset(buf, val, len); }

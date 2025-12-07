@@ -1,1 +1,0 @@
-size_t calculate_buffer_size(size_t element_count, size_t element_size) { if (element_count == 0 || element_size == 0) { return 0; } if (element_count > SIZE_MAX / element_size) { return 0; } return element_count * element_size; }

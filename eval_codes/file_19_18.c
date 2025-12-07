@@ -1,1 +1,0 @@
-typedef struct { char name[16]; int id; } Rec; void copy_struct_safe(Rec *dst, size_t dst_count, const Rec *src, unsigned nrec) { if (nrec > dst_count) nrec = (unsigned)dst_count; for (unsigned i = 0; i < nrec; ++i) dst[i] = src[i]; }

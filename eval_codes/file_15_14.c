@@ -1,1 +1,0 @@
-int parse_msg_safe(const uint8_t *pkt, unsigned pkt_len, uint8_t *out, size_t out_sz) { if (pkt_len < 2) return -1; unsigned data_len = pkt[0] | (pkt[1] << 8); if (data_len > pkt_len - 2 || data_len > out_sz) return -1; memcpy(out, pkt + 2, data_len); return (int)data_len; }

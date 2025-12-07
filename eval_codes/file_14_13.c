@@ -1,1 +1,0 @@
-void fill_buffer_bounded(char *buf, size_t buf_sz, char val, unsigned len) { if (len > buf_sz) len = (unsigned)buf_sz; memset(buf, val, len); }

@@ -1,1 +1,0 @@
-mma8452_show_int_plus_micros(char *buf, const int (*vals)[2], int n) { size_t len = 0; while (n-- > 0) len += scnprintf(buf + len, PAGE_SIZE - len, "%d.%06d ", vals[n][0], vals[n][1]); buf[len - 1] = ' '; return len; }

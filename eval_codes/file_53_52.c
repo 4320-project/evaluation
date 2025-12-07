@@ -1,1 +1,0 @@
-SetIgnoredFields( const char **papszFields ) { OGRErr eErr = OGRLayer::SetIgnoredFields(papszFields); if( eErr != OGRERR_NONE ) return eErr; CSLDestroy(papszIgnoredFields); papszIgnoredFields = papszFields ? CSLDuplicate((char**)papszFields) : NULL; return eErr; }

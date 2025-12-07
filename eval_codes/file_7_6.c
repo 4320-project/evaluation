@@ -1,1 +1,0 @@
-void expand_bitmap(uint8_t *dst, const uint8_t *src, unsigned src_w, unsigned scale) { unsigned dst_w = src_w * scale; for (unsigned x = 0; x < dst_w; ++x) dst[x] = src[x / scale]; }

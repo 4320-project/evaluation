@@ -1,1 +1,0 @@
-void unpack_rle(uint8_t *dst, unsigned dst_cap, const uint8_t *src, unsigned src_len) { unsigned dst_idx = 0; for (unsigned i = 0; i < src_len; ) { uint8_t val = src[i++], run = src[i++]; while (run--) dst[dst_idx++] = val; } }
