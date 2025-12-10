@@ -1,1 +1,0 @@
-void goodG2B(){twoIntsStruct*data;twoIntsStruct tmpData;{tmpData.intOne=0;tmpData.intTwo=0;data=&tmpData;}goodG2BSink(data);}
