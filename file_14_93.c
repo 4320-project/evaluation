@@ -1,1 +1,0 @@
-void CWE476_NULL_Pointer_Dereference__long_65b_badSink(long*data){printLongLine(*data);}void CWE476_NULL_Pointer_Dereference__long_65b_goodG2BSink(long*data){printLongLine(*data);}void CWE476_NULL_Pointer_Dereference__long_65b_goodB2GSink(long*data){if(data !=NULL){printLongLine(*data);}else{printLine("data is NULL");}}
